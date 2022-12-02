@@ -4,10 +4,10 @@ if __name__ == "__main__":
     # Определим универсальное множество
     u = set("abcdefghijklmnopqrstuvwxyz")
 
-    a = {"a","h","k"}
-    b = {"c","d","h","p","r"}
-    c = {"h","i","z"}
-    d = {"c","g","j","v","w"}
+    a = set("ahk")
+    b = set("cdhpr")
+    c = set("hiz")
+    d = set("cgjvw")
 
     x = (a.union(b)).intersection(c)
     print(f"x = {x}")
